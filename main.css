@@ -1,0 +1,69 @@
+/* main tab bar to remove the ugly lines */
+.mainbar {
+    border: var(--colorBg);
+}
+
+
+.startpage .startpage-navigation{
+    background-color: var(--colorBg) !important;
+    box-shadow: var(--colorBg) !important;
+}
+
+
+/* window button for linux */
+.window-buttongroup {
+    top: 0 !important;
+    right: 0 !important;
+}
+.window-buttongroup button {
+    padding: 5px !important;
+    margin: 3px !important;
+    height: 31px !important;
+    width: 25px !important;
+}
+button.window-minimize:hover, button.window-maximize:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+button.window-close:hover {
+    background-color: rgb(238, 0, 16) !important;
+}
+
+/* Pannel stuff */
+
+#panels-container.left:not(.icons) .panel-group, #panels-container.left.icons:not(:has(.SlideBar)){
+    border-right: none;
+}
+
+.vivaldi-tree .tree-row[data-selected] {
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+/* Mail stuff to make it look cleaner */
+.MailListButtons {
+    border-bottom: none;
+    background: var(--colorBg) !important;
+}
+
+.sortselector.sortselector-compact .sortselector-button {
+    border-left: none;
+}
+
+.sortselector {
+    border-bottom: none;
+    border-top: none;
+}
+
+.webpageview #mail_view .list-wrapper{
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+/* other pages */
+.manager > .toolbar {
+    background-color: var(--colorBg);
+}
