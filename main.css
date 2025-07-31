@@ -1,4 +1,17 @@
-/* main tab bar to remove the ugly lines */
+/* animations stuff */
+@keyframes audio_fade_active {
+    from {background: var(--colorBg);}
+    to {background: color-mix(in hsl, var(--colorAccentBg) 80%, var(--colorSuccessBg) 20%);}
+}
+
+@keyframes audio_fade_inactive {
+    from {background: var(--colorBgAlpha);}
+    to {background: color-mix(in hsl, var(--colorAccentBgAlpha) 90%, var(--colorSuccessBg) 10%);}
+}
+
+
+
+/* main tab bar to remove the ugly lines and some others */
 .mainbar {
     border: var(--colorBg);
 }
@@ -7,6 +20,20 @@
 .startpage .startpage-navigation{
     background-color: var(--colorBg) !important;
     box-shadow: var(--colorBg) !important;
+}
+
+.tab.audio-on {
+    animation-name: audio_fade_inactive;
+}
+
+.tab.active.audio-on {
+    animation-name: audio_fade_active;
+}
+.tab.active.audio-on, .tab.audio-on {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
 
 
@@ -63,7 +90,37 @@ button.window-close:hover {
   border-top-right-radius: var(--radius);
 }
 
+
+
 /* other pages */
 .manager > .toolbar {
     background-color: var(--colorBg);
+}
+
+
+.NotesManager {
+    background: var(--colorBg) !important
+}
+
+.NotesManager-Buttons {
+        border-top: 1px solid var(--colorBorder);
+}
+
+.sortselector .SlideBar--FullHeight.alternate {
+    position: relative;
+    background-color: #ffffff00;
+    border: 0 solid transparent;
+    border-width: 0 3px;
+    padding: 0;
+    margin: 0 -3px;
+    width: 7px;
+    height: var(--columnHeight);
+    max-height: -webkit-fill-available;
+    background-clip: content-box;
+    left: unset;
+    z-index: 1;
+}
+
+.panel .manager-content, .calendar.manager .manager-content {
+    border-left: 1px solid var(--colorBorder);
 }
