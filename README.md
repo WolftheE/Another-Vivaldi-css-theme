@@ -4,6 +4,7 @@
 
 ## Info about the mod
 It removes some border lines to make the ui look cleaner. 
+It also changes some ui colors.
 
 It also adds some smaller stuff like:
 - Tab-button changing color over time when playing music
@@ -12,12 +13,11 @@ It also adds some smaller stuff like:
 > [!WARNING]
 > May have some visual bugs and may break with update!
 
-
-## How to install
-
 > [!TIP]
 > Check here for updates once in a while!
 
+
+## How to install
 
 Download the main.css file and put it in a empty folder that you can access easily. 
 
