@@ -19,21 +19,21 @@ It also adds some smaller stuff like:
 
 ## How to install
 
-Download the main.css file and put it in a empty folder that you can access easily. 
+1. Download the main.css file and put it in a empty folder that you can access easily. 
 
-Go to Vivaldi and enter in the search bar: `vivaldi:experiments`
+2. Go to Vivaldi and enter in the search bar: `vivaldi:experiments`
 
-There should be an option called: "Allow CSS modification", enable it.
+3. There should be an option called: "Allow CSS modification", enable it.
 
-Restart Vivaldi.
+4. Restart Vivaldi.
 
-Once done, in your search bar, go to `vivaldi:settings/appearance/`
+5. Once done, in your search bar, go to `vivaldi:settings/appearance/`
 
-Then scroll down and you should see an option called "CUSTOM UI MODIFICATION"
+6. Then scroll down and you should see an option called "CUSTOM UI MODIFICATION"
 
-Click on "Select Folder" and pick the folder you placed the file in.
+7. Click on "Select Folder" and pick the folder you placed the file in.
 
-Restart and it should work!
+8. Restart and it should work!
 
 
 ## Some screenshots
