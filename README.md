@@ -1,20 +1,27 @@
 # Another-Vivaldi-css-theme
-> [!NOTE]
-> Some css mod that makes Vivaldi look somewhat more cleaner
+A css mod that makes Vivaldi look somewhat more cleaner!
+
+![screen_shot](screenshots/main.png)
+
+> Themed use : https://themes.vivaldi.net/themes/ZpY735a6vmz
+
+
 
 ## Info about the mod
-It removes some border lines to make the ui look cleaner. 
-It also changes some ui colors.
+It removes some border lines and changes some colors to make the Ui look cleaner while keeping the Vivaldi look!
 
 It also adds some smaller stuff like:
-- Tab-button changing color over time when playing music
+- Rounds some Ui stuff depending on the theme
+- Tabs changing color over time when playing music
 - Linux titlebar buttons modified 
 
-> [!WARNING]
-> May have some visual bugs and may break with update!
+> [!note]
+> This mod *should* be compatible with any theme.
+> But try to **Not** use transparency in your theme!
 
-> [!TIP]
-> Check here for updates once in a while!
+> [!WARNING]
+> May have some visual bugs and may break with updates!
+
 
 
 ## How to install
@@ -63,6 +70,18 @@ It also adds some smaller stuff like:
 ![screen_shot](screenshots/note_moded.png)
 
 
+### Bookmark/history page
+
+
+**Without** the mod
+![screen_shot](screenshots/book_normal.png)
+
+
+
+**With** the mod
+![screen_shot](screenshots/book_moded.png)
+
+
 ### Mail/Feeds example
 
 **Without** the mod
@@ -74,14 +93,3 @@ It also adds some smaller stuff like:
 ![screen_shot](screenshots/mail_moded.png)
 
 
-
-### Bookmark/history page
-
-
-**Without** the mod
-![screen_shot](screenshots/book_normal.png)
-
-
-
-**With** the mod
-![screen_shot](screenshots/book_moded.png)
