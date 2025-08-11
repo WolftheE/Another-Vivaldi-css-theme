@@ -126,7 +126,7 @@ button.window-close:hover {
 }
 
 .vivaldi-tree {
-    padding-left: 5px;
+    padding-left: 4px;
     padding-top: 5px;
     padding-bottom: 5px; 
 
@@ -142,12 +142,29 @@ button.window-close:hover {
 
 
 
+/* Pop up menu when presing f2 */
+
+.VivaldiList-Offset {
+    padding-left: 10px;
+
+}
+
+.hasfocus .quick-command-container .quick-commands .quick-command[data-selected] {
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.quick-command-container .quick-commands .quick-command {
+    padding: 0 6px 0 20px;
+}
 
 
 
 /* Font for Vivaldi UI */
 
-/* ======== REMOVE THIS WHOLE LINE TO ENABLE CUSTOM FONT ================
+/* ======== REMOVE THIS WHOLE LINE TO ENABLE CUSTOM FONT ================ 
 
 * {
   font-family: "Roboto" !important;
