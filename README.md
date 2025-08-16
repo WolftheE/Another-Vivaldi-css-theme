@@ -5,7 +5,12 @@ A css mod that makes Vivaldi look somewhat more cleaner!
 
 > Themed use : https://themes.vivaldi.net/themes/ZpY735a6vmz
 
+ 
+ 
 
+**New Transparency support!** (beta)
+
+![screen_shot](screenshots/transparent_beta_thing.png)
 
 ## Info about the mod
 It removes some border lines and changes some colors to make the Ui look cleaner while keeping the Vivaldi look!
@@ -17,7 +22,7 @@ It also adds some smaller stuff like:
 
 > [!note]
 > This mod *should* be compatible with any theme.
-> But try to **Not** use transparency in your theme!
+> If the Transparency is broken, disable it in your theme!
 
 > [!WARNING]
 > May have some visual bugs and may break with updates!
@@ -54,9 +59,6 @@ It also adds some smaller stuff like:
 
 **With** the mod
 ![screen_shot](screenshots/home_moded.png)
-
-
-
 
 
 ### Notes example
