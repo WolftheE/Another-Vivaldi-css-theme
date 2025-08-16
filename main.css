@@ -18,8 +18,9 @@
 
 
 .startpage .startpage-navigation{
-    background-color: var(--colorBg) !important;
-    box-shadow: var(--colorBg) !important;
+    backdrop-filter: var(--backgroundBlur);
+    background-color: var(--colorBgAlphaBlur) !important;
+    box-shadow: var(--colorBgAlphaBlur) !important;
 }
 
 .tab.audio-on {
@@ -36,6 +37,10 @@
     animation-timing-function: linear;
 }
 
+.find-in-page-wrapper {
+    backdrop-filter: var(--backgroundBlur);
+    background-color: var(--colorBgAlphaBlur) !important;
+}
 
 /* window button for linux */
 .window-buttongroup {
@@ -68,6 +73,18 @@ button.window-close:hover {
   border-top-right-radius: var(--radius);
 }
 
+.panel > header {
+    padding-left: 8px;
+}
+
+.panel-group .sortselector.sortselector-compact, .download-popout .sortselector.sortselector-compact {
+    margin-left: 8px;
+}
+
+.panel .calendar-grid {
+    padding-left: 8px;
+}
+
 /* Mail stuff to make it look cleaner */
 .MailListButtons {
     border-bottom: none;
@@ -93,13 +110,17 @@ button.window-close:hover {
 
 
 /* other pages like bookmarks, notes and history */
+
+
 .manager > .toolbar {
-    background-color: var(--colorBg);
+    backdrop-filter: var(--backgroundBlur);
+    background-color: var(--colorBgAlphaBlur);
 }
 
 
 .NotesManager {
-    background: var(--colorBg) !important
+    backdrop-filter: var(--backgroundBlur);
+    background: var(--colorBgAlphaBlur) !important
 }
 
 .NotesManager-Buttons {
@@ -121,22 +142,29 @@ button.window-close:hover {
     z-index: 1;
 }
 
+/* pray that this doesnt break anything */
+.sortselector {
+    background-color: rgba(0,0,0,0);
+}
+
 .panel .manager-content, .calendar.manager .manager-content {
     border-left: 1px solid var(--colorBorder);
 }
 
 .vivaldi-tree {
-    padding-left: 3px;
+    padding-left: 8px;
     padding-top: 5px;
     padding-bottom: 5px; 
 
 }
 
 .manager .manager-content {
-    background-color: var(--colorBg) !important;
+    backdrop-filter: var(--backgroundBlur);
+    background-color: var(--colorBgAlphaBlur) !important;
 }
 
 .NotesManager-EmptyPlaceholder {
+    backdrop-filter: var(--backgroundBlur);
     border-top: 1px solid var(--colorBorder);
 }
 
@@ -144,9 +172,8 @@ button.window-close:hover {
 
 /* Pop up menu when presing f2 */
 
-.VivaldiList-Offset {
+.quick-command-container .quick-commands {
     padding-left: 10px;
-
 }
 
 .hasfocus .quick-command-container .quick-commands .quick-command[data-selected] {
