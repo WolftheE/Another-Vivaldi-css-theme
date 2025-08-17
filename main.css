@@ -6,7 +6,7 @@
 
 @keyframes audio_fade_inactive {
     from {background: var(--colorBgAlpha);}
-    to {background: color-mix(in hsl, var(--colorAccentBgAlpha) 90%, var(--colorSuccessBg) 10%);}
+    to {background: color-mix(in hsl, var(--colorAccentBgAlphaHeavy) 90%, var(--colorSuccessBg) 10%);}
 }
 
 
@@ -86,9 +86,19 @@ button.window-close:hover {
 }
 
 /* Mail stuff to make it look cleaner */
+
+.webpageview #mail_view {
+    background-color: var(--colorBgAlphaBlur) !important;
+    backdrop-filter: var(--backgroundBlur); 
+}
+
+.theme-dark#browser:not(.inner) .webpageview #mail_view.vertical #mail_detail, .theme-dark#browser:not(.inner) .webpageview #mail_view.vertical_wide #mail_detail {
+    border-left: 1px solid rgba(0,0,0,0) !important;
+}
+
 .MailListButtons {
     border-bottom: none;
-    background: var(--colorBg) !important;
+    background: rgba(0,0,0,0) !important;
 }
 
 .sortselector.sortselector-compact .sortselector-button {
@@ -107,7 +117,25 @@ button.window-close:hover {
   border-top-right-radius: var(--radius);
 }
 
+.webpageview #mail_view #mail_detail {
+    background-color: rgba(0,0,0,0) !important;
+}
 
+.webpageview #mail_view #mail_detail .mail-detail-header {
+    background-color: rgba(0,0,0,0) !important;
+    border-bottom: none;
+}
+
+#quick_reply {
+    background-color: rgba(0,0,0,0) !important;
+    border-top: none;
+}
+
+
+.message-body-part {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 /* other pages like bookmarks, notes and history */
 
@@ -146,7 +174,7 @@ button.window-close:hover {
 .sortselector {
     background-color: rgba(0,0,0,0);
 }
-
+/* ====== */
 .panel .manager-content, .calendar.manager .manager-content {
     border-left: 1px solid var(--colorBorder);
 }
