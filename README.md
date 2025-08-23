@@ -3,7 +3,7 @@ A css mod that makes Vivaldi look somewhat more cleaner!
 
 ![screen_shot](screenshots/main.png)
 
-> Themed use : https://themes.vivaldi.net/themes/ZpY735a6vmz
+> Themed use : [Link here](https://themes.vivaldi.net/themes/ZpY735a6vmz)
 
  
  
@@ -13,11 +13,11 @@ A css mod that makes Vivaldi look somewhat more cleaner!
 ![screen_shot](screenshots/transparent_beta_thing.png)
 
 ## Info about the mod
-It removes some border lines and changes some colors to make the Ui look cleaner while keeping the Vivaldi look!
+It removesand adds small changes that makes Vivaldi (in my opinion) look much better! While keeping the Vivaldi look.
 
 It also adds some smaller stuff like:
 - Rounds some Ui stuff depending on the theme
-- Tabs changing color over time when playing music
+- Animations hovering effects
 - Linux titlebar buttons modified 
 
 > [!note]
@@ -31,7 +31,7 @@ It also adds some smaller stuff like:
 
 ## How to install
 
-1. Download the main.css file and put it in a empty folder that you can access easily. 
+1. Clone this repo 
 
 2. Go to Vivaldi and enter in the search bar: `vivaldi:experiments`
 
@@ -43,14 +43,19 @@ It also adds some smaller stuff like:
 
 6. Then scroll down and you should see an option called "CUSTOM UI MODIFICATION"
 
-7. Click on "Select Folder" and pick the folder you placed the file in.
+7. Click on "Select Folder" and pick the 'Another-Vivaldi-css-theme' in your Download folder.
 
 8. Restart and it should work!
 
+> [!note]
+> If you don't like the custom font, you can just delete the file named 'custom_font', or you can edit it!
+
 
 ## Some screenshots
+> To be updated
 
 ### Home page example
+
 
 **Without** the mod
 ![screen_shot](screenshots/home_normal.png)

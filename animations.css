@@ -1,0 +1,34 @@
+/* Beta Animations, may break any time! */
+/* Will be updated! */
+
+.button-toolbar > button:hover {
+    transition: .4s ease-out;
+}
+
+.button-toolbar > button {
+    transition: .3s ease-out;
+}
+
+.vivaldi-tree .tree-row {
+    background-color: #ffffff00;
+    transition: .2s ease-out
+}
+
+.vivaldi-tree .tree-row:hover {
+    background-color: var(--colorFgAlpha);
+    border-radius: var(--radius);
+    transition: .2s ease-out;
+}
+
+.startpage .startpage-navigation .startpage-navigation-group .button-startpage:hover {
+    background-color: var(--colorFgAlpha);
+    border-radius: var(--radius);
+    transition: .2s ease-out;
+}
+
+.startpage .startpage-navigation .startpage-navigation-group .button-startpage {
+    background-color: #ffffff00;
+    transition: .2s ease-out;
+}
+
+

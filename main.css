@@ -54,6 +54,11 @@
     height: 31px !important;
     width: 25px !important;
 }
+
+button.window-minimize, button.window-maximize, button.window-close {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    transition: .4s ease-out;
+}
 button.window-minimize:hover, button.window-maximize:hover {
     background-color: rgba(255, 255, 255, 0.2) !important;
     transition: .4s ease-out;
@@ -142,6 +147,14 @@ button.window-close:hover {
 
 /* other pages like bookmarks, notes and history */
 
+.manager .manager-editor {
+    border-top-left-radius: var(--radius);
+}
+
+.startpage .history .history-view {
+    /*Fix this one day */
+    background: var(--colorBgAlphaBlur);
+}
 
 .manager > .toolbar {
     backdrop-filter: var(--backgroundBlur);
@@ -216,42 +229,4 @@ button.window-close:hover {
 
 .quick-command-container .quick-commands .quick-command {
     padding: 0 6px 0 20px;
-}
-
-/* beta stuff that may break vivaldi! */
-/* May be removed! */
-
-.button-toolbar > button:hover {
-    transition: .4s ease-out;
-}
-
-.button-toolbar > button {
-    transition: .3s ease-out;
-}
-
-.vivaldi-tree .tree-row {
-    background-color: #ffffff00;
-    transition: .2s ease-out
-}
-
-.vivaldi-tree .tree-row:hover {
-    background-color: var(--colorFgAlpha);
-    border-radius: var(--radius);
-    transition: .2s ease-out;
-}
-
-
-/* Font for Vivaldi UI */
-
-/* ======== REMOVE THIS WHOLE LINE TO ENABLE CUSTOM FONT ================ 
-
-* {
-  font-family: "Roboto" !important;
-  text-shadow: 0 0 .8px var(--colorFgAlpha) !important;
-  letter-spacing: .1px;
-}
-
-.button-startpage button .button-title,
-.startpage .startpage-navigation .startpage-navigation-group .button-startpage {
-  font-family: "Roboto" !important;
 }
