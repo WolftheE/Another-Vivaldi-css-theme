@@ -11,6 +11,7 @@
 
 
 
+
 /* main tab bar to remove the ugly lines and some others */
 .mainbar {
     border: var(--colorBg);
@@ -55,9 +56,11 @@
 }
 button.window-minimize:hover, button.window-maximize:hover {
     background-color: rgba(255, 255, 255, 0.2) !important;
+    transition: .4s ease-out;
 }
 button.window-close:hover {
     background-color: rgb(238, 0, 16) !important;
+    transition: .3s ease-out;
 }
 
 /* Pannel stuff */
@@ -215,6 +218,27 @@ button.window-close:hover {
     padding: 0 6px 0 20px;
 }
 
+/* beta stuff that may break vivaldi! */
+/* May be removed! */
+
+.button-toolbar > button:hover {
+    transition: .4s ease-out;
+}
+
+.button-toolbar > button {
+    transition: .3s ease-out;
+}
+
+.vivaldi-tree .tree-row {
+    background-color: #ffffff00;
+    transition: .2s ease-out
+}
+
+.vivaldi-tree .tree-row:hover {
+    background-color: var(--colorFgAlpha);
+    border-radius: var(--radius);
+    transition: .2s ease-out;
+}
 
 
 /* Font for Vivaldi UI */
