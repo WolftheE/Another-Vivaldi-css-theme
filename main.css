@@ -95,6 +95,7 @@ button.window-close:hover {
 
 /* Mail stuff to make it look cleaner */
 
+
 .webpageview #mail_view {
     background-color: var(--colorBgAlphaBlur) !important;
     backdrop-filter: var(--backgroundBlur); 
@@ -113,7 +114,9 @@ button.window-close:hover {
     border-left: none;
 }
 
+
 .sortselector {
+    border-radius: var(--radius);
     border-bottom: none;
     border-top: none;
 }
@@ -152,15 +155,14 @@ button.window-close:hover {
 }
 
 .startpage .history .history-view {
-    /*Fix this one day */
-    background: var(--colorBgAlphaBlur);
+    background: #ffffff00;
 }
 
-.manager > .toolbar {
-    backdrop-filter: var(--backgroundBlur);
+
+.manager {
     background-color: var(--colorBgAlphaBlur);
+    backdrop-filter: var(--backgroundBlur);
 }
-
 
 .NotesManager {
     backdrop-filter: var(--backgroundBlur);
@@ -190,7 +192,16 @@ button.window-close:hover {
 .sortselector {
     background-color: rgba(0,0,0,0);
 }
+
+.NotesManager-Note {
+    border-top-left-radius: var(--radius);
+    background-color: var(--colorBg);
+    border-left: 1px solid var(--colorBorder);
+}
+
 /* ====== */
+
+
 .panel .manager-content, .calendar.manager .manager-content {
     border-left: 1px solid var(--colorBorder);
 }
@@ -202,9 +213,13 @@ button.window-close:hover {
 
 }
 
+.manager > .toolbar {
+    /* do NOT apply any bluring here otherwise some popups breaks idk how */
+    background-color: #ffffff00;
+}
+
 .manager .manager-content {
-    backdrop-filter: var(--backgroundBlur);
-    background-color: var(--colorBgAlphaBlur) !important;
+    background-color: #ffffff00;
 }
 
 .NotesManager-EmptyPlaceholder {
@@ -212,6 +227,10 @@ button.window-close:hover {
     border-top: 1px solid var(--colorBorder);
 }
 
+
+.NotesManager--Vertical .NotesManager-Tree:not(.NotesManager-Tree--Collapsed) {
+    border-right: 0px solid var(--colorBorder);
+}
 
 
 /* Pop up menu when presing f2 */
