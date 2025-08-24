@@ -31,4 +31,39 @@
     transition: .2s ease-out;
 }
 
+.button-toolbar > button > span.button-toolbar-menu-indicator:hover {
+    transition: .2s ease-out;
+}
 
+.button-toolbar > button > span.button-toolbar-menu-indicator {
+    transition: .2s ease-out;
+}
+
+input[type=button]:not(.circular), input[type=submit], input[type=color], .FormButton {
+    transition: .2s ease-out;
+}
+
+input[type=button]:not(.circular), input[type=submit], input[type=color], .FormButton:hover {
+    transition: .4s ease-out;
+}
+
+
+.vivaldi-settings .settings-sidebar .button-category {
+    transition: .3 ease-out;
+}
+
+.vivaldi-settings .settings-sidebar .button-category:hover {
+    transition: .2s ease-out;
+    background-color: var(--colorFgAlpha);
+}
+
+.vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row .button-category.category-selected {
+    transition: .2s ease-out;
+    background-color: var(--colorHighlightBg);
+}
+
+
+.sortselector .sortselector-button:hover:not(:disabled), .sortselector .sortselector-dropdown:hover:not(:disabled), .sortselector .sortselector-button:focus-visible, .sortselector .sortselector-dropdown:focus-visible {
+    border-radius: var(--radius);
+    transition: .2s ease-out;
+}
