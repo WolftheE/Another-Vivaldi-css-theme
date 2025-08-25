@@ -13,10 +13,10 @@
 
 
 /* main tab bar to remove the ugly lines and some others */
-.mainbar {
-    border: var(--colorBg);
-}
 
+.webpageview > .row-wrapper .webpage {
+    border-left: 1px solid var(--colorBorder);
+}
 
 .startpage .startpage-navigation{
     backdrop-filter: var(--backgroundBlur);
@@ -225,6 +225,8 @@ button.window-close:hover {
 .NotesManager-EmptyPlaceholder {
     backdrop-filter: var(--backgroundBlur);
     border-top: 1px solid var(--colorBorder);
+    border-left: 1px solid var(--colorBorder);
+    border-top-left-radius: var(--radius);
 }
 
 
@@ -248,4 +250,8 @@ button.window-close:hover {
 
 .quick-command-container .quick-commands .quick-command {
     padding: 0 6px 0 20px;
+}
+
+.panel .manager-content, .calendar.manager .manager-content {
+    border-top-left-radius: var(--radius);
 }
