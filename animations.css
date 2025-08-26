@@ -1,6 +1,21 @@
 /* Beta Animations, may break any time! */
 /* Will be updated! */
 
+/* bigger animations */
+
+
+
+
+/* buttons */
+
+.hasfocus .quick-command-container .quick-commands .quick-command[data-selected] {
+    transition: 0.2s ease-out;
+}
+
+.hasfocus .quick-command-container .quick-commands .quick-command {
+    transition: 0.3s ease-out;
+}
+
 .button-toolbar > button:hover {
     transition: .4s ease-out;
 }
