@@ -12,14 +12,31 @@
 
 
 
-/* main tab bar to remove the ugly lines and some others */
+/* webpage / very important 
 
+TODO: fix this*/
+
+#browser:not(.inner, .narrow-tiling) #webpage-stack > .tiled.visible {
+    box-shadow: inset 0 0 0 var(--n6) #ffffff00;
+    background-color: var(--colorBgAlphaBlur);
+    backdrop-filter: var(--backgroundBlur);
+}
+#browser .tile:has(> .tiled.webpageview) {
+    border: var(--mosaicPadding) solid #ffffff00;
+}
+
+#webview-container {
+    --bgCoverShadow: 0 0 0 var(--mosaicPadding) #00000000;
+}
+
+
+/*Not sure to use the border here or at the panel*/
 .webpageview > .row-wrapper .webpage {
     border-left: 1px solid var(--colorBorder);
-    border-bottom: 1px solid var(--colorBorder);
     border-right: 1px solid var(--colorBorder);
 }
 
+/* main tab bar to remove the ugly lines and some others */
 .color-behind-tabs-on .SearchField:focus-within, .color-behind-tabs-on .MailSearchField-Inner:focus-within, .color-behind-tabs-on .UrlBar-AddressField:focus-within {
     outline: 2px solid var(--colorTabBar);
 }
@@ -76,10 +93,14 @@ button.window-close:hover {
 
 /* Pannel stuff */
 
+/* unsure to use this or the webpage method 
+#panels-container.left:not(.icons) .panel-group, #panels-container.left.icons:not(:has(.SlideBar)){
+    border-right: 1px solid var(--colorBorder);
+}*/
+
 #panels-container.left:not(.icons) .panel-group, #panels-container.left.icons:not(:has(.SlideBar)){
     border-right: none;
 }
-
 
 #history-panel .vivaldi-tree .VivaldiList-Offset {
     padding: 0px;
