@@ -16,6 +16,12 @@
 
 .webpageview > .row-wrapper .webpage {
     border-left: 1px solid var(--colorBorder);
+    border-bottom: 1px solid var(--colorBorder);
+    border-right: 1px solid var(--colorBorder);
+}
+
+.color-behind-tabs-on .SearchField:focus-within, .color-behind-tabs-on .MailSearchField-Inner:focus-within, .color-behind-tabs-on .UrlBar-AddressField:focus-within {
+    outline: 2px solid var(--colorTabBar);
 }
 
 .startpage .startpage-navigation{
@@ -72,6 +78,12 @@ button.window-close:hover {
 
 #panels-container.left:not(.icons) .panel-group, #panels-container.left.icons:not(:has(.SlideBar)){
     border-right: none;
+}
+
+
+#history-panel .vivaldi-tree .VivaldiList-Offset {
+    padding: 0px;
+    border-radius: var(--radius);
 }
 
 .vivaldi-tree .tree-row[data-selected] {
@@ -159,6 +171,7 @@ button.window-close:hover {
 }
 
 
+
 .manager {
     background-color: var(--colorBgAlphaBlur);
     backdrop-filter: var(--backgroundBlur);
@@ -187,11 +200,18 @@ button.window-close:hover {
     left: unset;
     z-index: 1;
 }
+.sortselector .sortselector-button {
+    border-radius: 4px;
+    background-color: var(--colorAccentFgAlphaHeavy);
+}
 
-/* pray that this doesnt break anything */
+/* pray that this doesnt break anything 
+Edit: It did.... so i had to change some stuff */
 .sortselector {
     background-color: rgba(0,0,0,0);
-}
+} 
+
+
 
 .NotesManager-Note {
     border-top-left-radius: var(--radius);

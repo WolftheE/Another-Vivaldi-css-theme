@@ -1,8 +1,10 @@
 /* Beta Animations, may break any time! */
 /* Will be updated! */
 
-/* bigger animations */
-
+/* Top tab bar thing */
+#browser .tabbar-wrapper, #browser.tabs-top #header {
+    transition: .4s ease-out;
+}
 
 
 
@@ -24,19 +26,30 @@
     transition: .3s ease-out;
 }
 
-.vivaldi-tree .tree-row {
-    background-color: #ffffff00;
-    transition: .2s ease-out
+.vivaldi-tree .tree-row, .tree-row.dragover {
+    transition: .2s ease-out;
 }
 
-.vivaldi-tree .tree-row:hover {
-    background-color: var(--colorFgAlpha);
+
+ /* TODO: Fix this part one day! */
+.hasfocus #history-panel .vivaldi-tree .VivaldiList:focus-within .tree-row[data-selected] label {
+    background-color: var(--colorAccentFgAlphaHeavy) !important;
+}
+ /* TODO: Fix this part one day! */
+.vivaldi-tree .tree-row:hover, .tree-row.dragover:hover {
+    background-color: var(--colorAccentFgAlphaHeavy) !important;
     border-radius: var(--radius);
     transition: .2s ease-out;
 }
 
+.vivaldi-tree .tree-row.dragover, .hasfocus .vivaldi-tree:focus-within .tree-row[data-selected] {
+    background-color: var(--colorAccentBg) !important;
+    transition: .2s ease-out;
+}
+ /* TODO: Fix the part above */
+
 .startpage .startpage-navigation .startpage-navigation-group .button-startpage:hover {
-    background-color: var(--colorFgAlpha);
+    background-color: var(--colorAccentFgAlphaHeavy);
     border-radius: var(--radius);
     transition: .2s ease-out;
 }
@@ -69,16 +82,20 @@ input[type=button]:not(.circular), input[type=submit], input[type=color], .FormB
 
 .vivaldi-settings .settings-sidebar .button-category:hover {
     transition: .2s ease-out;
-    background-color: var(--colorFgAlpha);
+    background-color: var(--colorAccentFgAlphaHeavy);
 }
 
 .vivaldi-settings .settings-sidebar .settings-navigation:focus-within .tree-row .button-category.category-selected {
     transition: .2s ease-out;
-    background-color: var(--colorHighlightBg);
+    background-color: var(--colorAccentBg);
 }
 
 
 .sortselector .sortselector-button:hover:not(:disabled), .sortselector .sortselector-dropdown:hover:not(:disabled), .sortselector .sortselector-button:focus-visible, .sortselector .sortselector-dropdown:focus-visible {
     border-radius: var(--radius);
     transition: .2s ease-out;
+}
+
+.sortselector .sortselector-button {
+    transition: .4s ease-out;
 }
