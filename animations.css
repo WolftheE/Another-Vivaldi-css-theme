@@ -5,10 +5,17 @@
 #browser .tabbar-wrapper, #browser.tabs-top #header {
     transition: .4s ease-out;
 }
+#browser:not(.transparent-tabbar) #tabs-tabbar-container {
+    transition: .4s ease-out;
+}
 
 
 
 /* buttons */
+
+.color-behind-tabs-on .tab {
+    transition: .2s ease-out;
+}
 
 .hasfocus .quick-command-container .quick-commands .quick-command[data-selected] {
     transition: 0.2s ease-out;
@@ -32,21 +39,39 @@
 
 
  /* TODO: Fix this part one day! */
-.hasfocus #history-panel .vivaldi-tree .VivaldiList:focus-within .tree-row[data-selected] label {
-    background-color: var(--colorAccentFgAlphaHeavy) !important;
-}
- /* TODO: Fix this part one day! */
-.vivaldi-tree .tree-row:hover, .tree-row.dragover:hover {
-    background-color: var(--colorAccentFgAlphaHeavy) !important;
+.vivaldi-tree .VivaldiList .tree-row[data-selected] label {
+    background-color: var(--colorAccentBg) !important;
     border-radius: var(--radius);
     transition: .2s ease-out;
 }
 
+.vivaldi-tree .VivaldiList .tree-row[data-selected]:hover label {
+    background-color: var(--colorAccentBg) !important;
+    border-radius: var(--radius);
+    transition: .2s ease-out;
+}
+
+.vivaldi-tree .VivaldiList .tree-row:hover label {
+    background-color: var(--colorAccentFgAlpha) !important;
+    transition: .2s ease-out;
+    border-radius: var(--radius);
+}
+
+.vivaldi-tree .VivaldiList .tree-row label {
+    transition: .2s ease-out;
+}
+
+.vivaldi-tree .tree-row:hover, .tree-row.dragover:hover{
+    background-color: var(--colorAccentFgAlphaHeavy);
+    border-radius: var(--radius);
+    transition: .2s ease-out;
+}
+ /* TODO: Fix this part one day! 
 .vivaldi-tree .tree-row.dragover, .hasfocus .vivaldi-tree:focus-within .tree-row[data-selected] {
     background-color: var(--colorAccentBg) !important;
     transition: .2s ease-out;
 }
- /* TODO: Fix the part above */
+/* TODO: Fix the part above */
 
 .startpage .startpage-navigation .startpage-navigation-group .button-startpage:hover {
     background-color: var(--colorAccentFgAlphaHeavy);
